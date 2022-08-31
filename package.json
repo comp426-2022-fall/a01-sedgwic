@@ -1,0 +1,22 @@
+{
+  "name": "my-first-server",
+  "version": "1.0.0",
+  "description": "This assignment will help you get started working with Node.js by hacking your way through creating a webserver from scratch.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a01-sedgwic.git"
+  },
+  "author": "sedgwic",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a01-sedgwic/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a01-sedgwic#readme",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
+}

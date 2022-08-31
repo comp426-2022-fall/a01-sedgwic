@@ -24,7 +24,7 @@ fs.readFile('./public/index.html', 'utf-8', function(err, data)) {
     console.log(err);
     return data;
   }
-}
+
 // If there is an error, put it on the console error and return.
 // Do not be nice about exiting.
 
@@ -40,9 +40,9 @@ fs.readFile('./public/index.html', 'utf-8', function(err, data)) {
 // 3. end with the data that you are reading in from ./public/index.html.
 const server = http.createServer((req, res) => {
   res.sendStatus(200);
-  res.type('text/html');
-  res.send('./public/index.html');
-})
+  res.setHeader("Content-Type", "text/html");
+  res.end(data);
+});
 
 
 
@@ -51,6 +51,7 @@ const server = http.createServer((req, res) => {
 // Put the exact message `Server listening on port ${port}` on the console log.
 app.listen((port, err) => {
   return console.log(console.log('Server Listening on port ${port}'));
-}) 
+}); 
+});
 // That's it! You're all done!
 
